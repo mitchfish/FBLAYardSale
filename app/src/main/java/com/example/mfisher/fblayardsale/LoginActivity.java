@@ -70,10 +70,15 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
         Button email_sign_in_button = (Button) findViewById(R.id.email_sign_in_button);
         email_sign_in_button.setOnClickListener(new OnClickListener() {
-            public void onClick(View v) {
-               Intent intent = new Intent(v.getContext(), MainActivity.class);
-                startActivityForResult(intent, 0);
-            }
+            @Override
+
+               Intent mainIntent = new Intent(this, MainActivity.class);
+               startService(mainIntent);
+
+           /* public void onClick(View v) {
+               Intent mainIntent = new Intent(LoginActivity.this, MainActivity.class);
+                startActivity(Intent);
+            }*/
         });
         // Set up the login form.
         mEmailView = (AutoCompleteTextView) findViewById(R.id.email);

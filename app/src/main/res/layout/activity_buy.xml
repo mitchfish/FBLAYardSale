@@ -10,4 +10,17 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.mfisher.fblayardsale.BuyActivity">
 
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/searchicon"
+        android:id="@+id/imageView2"
+        android:layout_marginBottom="446dp"
+        android:layout_marginLeft="287dp"
+        android:layout_marginStart="287dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
 </RelativeLayout>
+
