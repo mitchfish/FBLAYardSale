@@ -13,13 +13,4 @@ public class BuyActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_buy);
     }
-
-    Button imageView2 = (Button) findViewById(R.id.imageView2);
-    imageView2.setOnClickListener(new OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Intent searchIntent = new Intent(BuyActivity.this, MainActivity.class);
-            startActivity(Intent);
-        }
-    });
 }
