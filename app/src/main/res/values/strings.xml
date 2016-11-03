@@ -22,4 +22,6 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="welcome">Welcome to the FBLA Digital Yard Sale.  Below, you may choose to search for items to purchase, or you may donate an item to be sold.</string>
+    <string name="title_activity_postdonation">postdonation</string>
+    <string name="thankyou">Thank you for your generous donation!  Your item will be sold in our digital yard sale and the money made on the item will be used to help us go to the FBLA National Leadership Conference!</string>
 </resources>

@@ -12,89 +12,92 @@
     tools:context="com.example.mfisher.fblayardsale.DonateActivity">
 
     <ImageButton
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="300px"
+        android:layout_height="300px"
         app:srcCompat="@drawable/plusicon"
         android:id="@+id/imageButton2"
-        android:layout_marginRight="34dp"
-        android:layout_marginEnd="34dp"
-        android:layout_marginBottom="135dp"
-        android:layout_alignBottom="@+id/editText3"
-        android:layout_toLeftOf="@+id/editText"
-        android:layout_toStartOf="@+id/editText" />
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toLeftOf="@+id/button"
+        android:layout_toStartOf="@+id/button"
+        android:layout_marginBottom="33dp" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Item name"
-        android:ems="10"
-        android:id="@+id/editText"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textMultiLine"
-        android:ems="10"
-        android:layout_marginTop="127dp"
-        android:id="@+id/editText3"
-        android:text="Description..."
-        android:layout_below="@+id/editText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:ems="10"
-        android:layout_below="@+id/imageButton2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="29dp"
-        android:id="@+id/editText4"
-        android:text="Suggested Price" />
+    <Button
+        android:text="Donate Item"
+        android:layout_height="100px"
+        android:id="@+id/donateitembutton"
+        android:layout_width="300px"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:text="Condition of Item
         (1 = Great Condition, 5 = Poor)"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/textView2"
-        android:layout_marginTop="42dp"
-        android:layout_below="@+id/editText4"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_width="230px"
+        android:layout_height="150px"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:layout_marginBottom="40dp"
+        android:layout_above="@+id/donateitembutton"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3" />
+
+    <EditText
+        android:layout_width="450px"
+        android:layout_height="100px"
+        android:inputType="textPersonName"
+        android:hint="Item name"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageButton2"
+        android:layout_toEndOf="@+id/imageButton2" />
 
     <TextView
         android:text="Add Picture"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150px"
+        android:id="@+id/textView3"
+        android:layout_marginRight="37dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginTop="39dp"
+        android:layout_height="50px"
         android:layout_below="@+id/editText"
         android:layout_alignRight="@+id/imageButton2"
-        android:layout_alignEnd="@+id/imageButton2"
-        android:layout_marginRight="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="43dp"
-        android:id="@+id/textView3" />
+        android:layout_alignEnd="@+id/imageButton2" />
 
-    <Button
-        android:text="Donate Item"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/button" />
+    <EditText
+        android:layout_width="450px"
+        android:layout_height="100px"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_marginTop="22dp"
+        android:id="@+id/editText4"
+        android:hint="Suggested Price"
+        android:layout_below="@+id/imageButton2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="450px"
+        android:layout_height="100px"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:hint="Description..."
+        android:layout_below="@+id/editText4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp" />
 
     <NumberPicker
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200px"
+        android:layout_height="200px"
         android:id="@+id/numberPicker"
-        android:layout_below="@+id/textView2"
-        android:layout_toRightOf="@+id/button"
-        android:layout_toEndOf="@+id/button" />
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toRightOf="@+id/editText3"
+        android:layout_toEndOf="@+id/editText3"
+        android:layout_marginTop="10dp" />
 
 </RelativeLayout>

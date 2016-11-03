@@ -5,22 +5,21 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.view.View.OnClickListener;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class PostDonation extends AppCompatActivity {
 
-    Button buybutton,donatebutton;
+    Button donateagainbutton, shopbutton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_post_donation);
 
-        buybutton=(Button) findViewById(R.id.buybutton);
-        donatebutton=(Button) findViewById(R.id.donatebutton);
+        donateagainbutton=(Button) findViewById(R.id.donateagainbutton);
+        shopbutton=(Button) findViewById(R.id.shopbutton);
 
-        buybutton.setOnClickListener(new OnClickListener() {
+        shopbutton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View arg0) {
@@ -32,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        donatebutton.setOnClickListener(new OnClickListener() {
+        donateagainbutton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View arg0) {
@@ -42,5 +41,4 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
 }

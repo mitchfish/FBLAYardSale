@@ -10,44 +10,43 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.mfisher.fblayardsale.MainActivity">
 
+    <TextView
+        android:text="@string/welcome"
+        android:id="@+id/textView"
+        android:fontFamily="sans-serif"
+        android:textSize="24sp"
+        android:layout_width="800px"
+        android:layout_height="300px"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
+
+    <ImageView
+        android:layout_width="600px"
+        android:layout_height="600px"
+        android:src="@drawable/fblalogo"
+        android:id="@+id/imageView"
+        android:layout_marginBottom="68dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200px"
+        android:layout_height="100px"
         android:text="Donate"
         android:id="@+id/donatebutton"
         android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/buybutton"
-        android:layout_alignStart="@+id/buybutton"
-        android:layout_marginBottom="142dp" />
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200px"
+        android:layout_height="100px"
         android:text="Buy"
         android:id="@+id/buybutton"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="114dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/welcome"
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="19dp" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/fblalogo"
-        android:id="@+id/imageView"
-        android:layout_marginTop="76dp"
-        android:layout_alignTop="@+id/donatebutton"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView" />
 
 
 </RelativeLayout>
