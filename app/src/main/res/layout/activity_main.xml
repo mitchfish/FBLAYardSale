@@ -33,20 +33,29 @@
     <Button
         android:layout_width="200px"
         android:layout_height="100px"
-        android:text="Donate"
-        android:id="@+id/donatebutton"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/imageView"
-        android:layout_alignEnd="@+id/imageView" />
-
-    <Button
-        android:layout_width="200px"
-        android:layout_height="100px"
         android:text="Buy"
         android:id="@+id/buybutton"
         android:layout_alignParentBottom="true"
         android:layout_alignLeft="@+id/imageView"
         android:layout_alignStart="@+id/imageView" />
+
+    <Button
+        android:layout_width="200px"
+        android:layout_height="100px"
+        android:text="Donate"
+        android:id="@+id/donatebutton"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/buybutton"
+        android:layout_toEndOf="@+id/buybutton" />
+
+    <Button
+        android:layout_width="200px"
+        android:layout_height="100px"
+        android:id="@+id/aboutbutton"
+        android:text="About FBLA"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/donatebutton"
+        android:layout_toEndOf="@+id/donatebutton" />
 
 
 </RelativeLayout>

@@ -24,5 +24,10 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="welcome">Welcome to the FBLA Digital Yard Sale.  Below, you may choose to search for items to purchase, or you may donate an item to be sold.</string>
     <string name="title_activity_postdonation">postdonation</string>
-    <string name="thankyou">Thank you for your generous donation!  Your item will be sold in our digital yard sale and the money made on the item will be used to help us go to the FBLA National Leadership Conference!</string>
+    <string name="thankyou">Thank you for your generous donation!  Your item will be reviewed before it is posted on our digital yard sale.  The money made on the item will be used to help us go to the FBLA National Leadership Conference!</string>
+    <string name="about"><p>FBLA stands for "Future Business Leaders of America".  The FBLA mission is to bring business and education together in a positive working relationship through innovative leadership and career development programs.  Spanning the entire U.S., FBLA chapters have started in many high schools in order to accomplish this mission.</p>
+        <p>As an FBLA chapter, it is our goal to attend the National Leadership Conference so we can compete against the rest of the nation in our events.  We appreciate your donation in helping us reach our goal.</p></string>
+    <string name="itemcondition"> Condition of Item
+        <li>1 = Great Condition</li>
+        <li>5 = Poor</li></string>
 </resources>

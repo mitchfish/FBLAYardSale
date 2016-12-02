@@ -31,19 +31,6 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
-    <TextView
-        android:text="Condition of Item
-        (1 = Great Condition, 5 = Poor)"
-        android:id="@+id/textView2"
-        android:layout_width="230px"
-        android:layout_height="150px"
-        android:textAlignment="center"
-        android:textSize="14sp"
-        android:layout_marginBottom="40dp"
-        android:layout_above="@+id/donateitembutton"
-        android:layout_alignRight="@+id/textView3"
-        android:layout_alignEnd="@+id/textView3" />
-
     <EditText
         android:layout_width="450px"
         android:layout_height="100px"
@@ -56,14 +43,15 @@
         android:layout_toEndOf="@+id/imageButton2" />
 
     <TextView
-        android:text="Add Picture"
+        android:text="Click to add a picture..."
         android:layout_width="150px"
         android:id="@+id/textView3"
-        android:layout_marginRight="37dp"
-        android:layout_marginEnd="37dp"
         android:layout_marginTop="39dp"
         android:layout_height="50px"
         android:layout_below="@+id/editText"
+        android:textAlignment="center"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/imageButton2"
         android:layout_alignEnd="@+id/imageButton2" />
 
@@ -91,13 +79,26 @@
         android:layout_alignParentStart="true"
         android:layout_marginTop="18dp" />
 
+    <TextView
+        android:text="@string/itemcondition"
+        android:id="@+id/textView2"
+        android:layout_width="230px"
+        android:layout_height="150px"
+        android:textSize="14sp"
+        android:layout_marginBottom="19dp"
+        android:textAlignment="center"
+        android:textStyle="normal|italic"
+        android:textAllCaps="false"
+        android:layout_above="@+id/donateitembutton"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3" />
+
     <NumberPicker
         android:layout_width="200px"
         android:layout_height="200px"
         android:id="@+id/numberPicker"
-        android:layout_alignTop="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
         android:layout_toRightOf="@+id/editText3"
-        android:layout_toEndOf="@+id/editText3"
-        android:layout_marginTop="10dp" />
+        android:layout_toEndOf="@+id/editText3" />
 
 </RelativeLayout>
