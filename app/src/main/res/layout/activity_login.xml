@@ -68,17 +68,11 @@
     <Button
         android:id="@+id/email_sign_in_button"
         android:layout_width="200px"
-        android:layout_height="100px"
+        android:layout_height="wrap_content"
         android:onClick="sendMessage"
         android:layout_marginTop="16dp"
         android:text="@string/action_sign_in"
         android:textStyle="bold" />
-
-    <Button
-        android:layout_height="100px"
-        android:id="@+id/button2"
-        android:text="@string/action_register"
-        android:layout_width="200px" />
 
     <ImageView
         android:layout_width="wrap_content"
