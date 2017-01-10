@@ -44,6 +44,6 @@ public class AboutActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Your donation is much appreciated!", Toast.LENGTH_LONG).show();
             }
         });
-
+    //GITTEST
     }
 }
